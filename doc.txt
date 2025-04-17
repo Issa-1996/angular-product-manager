@@ -1,7 +1,7 @@
 #Creation du projet
 ng new GestionProduits
 
-1.Initialiser Git Localement
+1. Initialiser Git Localement
 Dans le dossier racine de votre projet Angular (cd mon-projet-angular) :
 
 # Initialiser un dépôt Git
@@ -9,3 +9,36 @@ git init
 
 # Ajouter tous les fichiers (sauf node_modules/)
 git add .
+
+# Faire un premier commit
+git commit -m "Initial commit: Setup Angular + Structure de base"
+
+2. Créer un Repository sur GitHub/GitLab
+GitHub :
+Allez sur github.com/new.
+Nommez le repo (ex: angular-product-manager).
+Ne cochez pas "Initialize with README" (car vous avez déjà un projet existant).
+
+3. Lier le Repository Distant
+Copiez l’URL HTTPS/SSH de votre repo (ex: https://github.com/votre-user/angular-product-manager.git), puis :
+# Ajouter le remote
+git remote add origin URL_DU_REPO
+# Pousser le code
+git push -u origin main
+
+Si vous avez une erreur (ex: failed to push some refs), utilisez :
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+4. Fichiers à Ignorer (.gitignore)
+Assurez-vous que votre .gitignore contient (Angular le génère automatiquement) :
+
+6. Workflow Typique
+Créer une branche pour une nouvelle fonctionnalité :
+git checkout -b feature/add-product-form
+
+# Créer et basculer sur une nouvelle branche
+git checkout -b ma-nouvelle-branche
+
+# Pousser la branche ET définir le tracking (upstream)
+git push -u origin ma-nouvelle-branche
