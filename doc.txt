@@ -1,0 +1,11 @@
+#Creation du projet
+ng new GestionProduits
+
+1.Initialiser Git Localement
+Dans le dossier racine de votre projet Angular (cd mon-projet-angular) :
+
+# Initialiser un dépôt Git
+git init
+
+# Ajouter tous les fichiers (sauf node_modules/)
+git add .
